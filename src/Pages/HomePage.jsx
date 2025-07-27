@@ -1,3 +1,4 @@
+import DropdownComponent from "../Components/CompoundCoponent/DorpdownComponent";
 import Tabs from "../Components/CompoundCoponent/TabsCoponent";
 import TabsContainer from "../Components/TabsContainer";
 
@@ -18,6 +19,14 @@ export default function HomePage() {
 					<Tabs.Panel index={2}>Content for Tab 3</Tabs.Panel>
 				</Tabs.Panels>
 			</Tabs>
+
+			<DropdownComponent>
+				<DropdownComponent.ListOfOptions>
+					<DropdownComponent.Option> option1 </DropdownComponent.Option>
+					<DropdownComponent.Option> option2 </DropdownComponent.Option>
+					<DropdownComponent.Option> option3 </DropdownComponent.Option>
+				</DropdownComponent.ListOfOptions>
+			</DropdownComponent>
 		</>
 	)
 }
